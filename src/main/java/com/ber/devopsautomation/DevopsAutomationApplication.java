@@ -8,10 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @SpringBootApplication
 public class DevopsAutomationApplication {
-	@GetMapping
-	public String message(){
-		return "welcome to javatechie";
-	}
+
 	public static void main(String[] args) {
 		SpringApplication.run(DevopsAutomationApplication.class, args);
 	}
