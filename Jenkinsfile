@@ -1,6 +1,6 @@
 pipeline {
     environment {
-        registry = 'amachlou/cicd_app'
+        registry = 'amachlou/devops-automation'
         registryCredential = 'docker_hub'
         dockerImage = ''
     }
@@ -8,7 +8,7 @@ pipeline {
     stages {
         stage('Cloning Git') {
             steps {
-                git 'https://github.com/amachlou/cicd_app.git'
+                git 'https://github.com/amachlou/devops-automation.git'
             }
         }
         stage('Building image') {
